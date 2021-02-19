@@ -1,0 +1,14 @@
+body {
+	color:white;
+	background-color: black;
+	font-family: Arial;
+}
+
+table, th, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+
+#notification_save, #notification_update{
+	color:orange;
+}

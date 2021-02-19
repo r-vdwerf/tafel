@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="javascript.js"></script>
+   <title>mweh</title>
+  </head>
+
+  <body>
+    <form id="toevoegen">
+      <input id="wijk" type=text placeholder="wijk">
+      <input id="cap" type=text placeholder="capaciteit">
+      <input id="raam" type="checkbox" name="bij het raam">
+      <label for="bij het raam">bij het raam</label>
+      <input type=button value="toevoegen" onclick="save()">
+      <div id="notification_save" style="visibility:hidden"></div>      
+    </form><br>    
+    
+    <table id="table"></table><br>
+    
+    <form id="wijzigen" style="visibility: hidden">
+      <input id="w_id" readonly>
+      <input id="w_wijk" type=text placeholder="wijk">
+      <input id="w_cap" type=text placeholder="capaciteit">
+      <input id="w_raam" type="checkbox" name="bij het raam">
+      <label for="bij het raam">bij het raam</label>
+      <input id = "i_wijzigen" type=button value="wijzigen" onclick="update()">
+      <input id = "annuleren" type=button value="annuleren" onclick="cancel()">     
+      <div id="notification_update"></div>      
+    </form> 
+  </body>
+</html>
